@@ -1,8 +1,10 @@
 books = []
 
+def add(title: str, author: str, pages: int) -> None:
+    books.append({"Title": title, "Author": author, pages: pages})
 
 if __name__ == '__main__':
-    book = {"Title": "My first book", "Author": "PyLadies", "Pages": 23}
-    books.append(book)
+    add(title="My first book", author="PyLadies", pages=23)
+
 
     print(books)
